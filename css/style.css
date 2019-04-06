@@ -1,0 +1,356 @@
+* {
+	border: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+		-ms-box-sizing: border-box;
+		 -o-box-sizing: border-box;
+			box-sizing: border-box;
+	font: inherit;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	text-decoration: none;
+	vertical-align: baseline;
+}
+
+html {
+	font-size:62.5%;
+	height:100%;
+	width:100%;
+}
+
+body {
+	font-size: 10px;
+	font-size: 1.0rem;
+	 -webkit-font-smoothing: antialiased;
+			 font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%;
+	line-height: 1;
+	position: relative;
+	text-align: center;
+	-webkit-text-size-adjust: 100%;
+	   -moz-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+		 -o-text-size-adjust: 100%;
+			text-size-adjust: 100%;
+	width: 100%;
+}
+
+article,
+aside,
+dialog,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section {
+	display :block;
+}
+
+audio, canvas, video {display:inline-block;}
+
+br,
+hr {display:block;}
+
+ol,
+ul {list-style:none;}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content:none ;
+}
+
+input,
+select {
+	vertical-align: middle;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	empty-cells: show;
+}
+
+a:link,
+a:active,
+a:hover,
+a:visited {
+	color: #222;
+}
+
+body {
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+#wrapper {
+	display: flex;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	height: 100%;
+}
+
+#main {
+	-webkit-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
+	overflow: scroll;
+	position: relative;
+}
+
+#nav {
+	background-color: #f5f5f5;
+	font-size: 13px;
+	height: 60px;
+}
+
+#nav ul {
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+}
+
+#nav ul li {
+	-webkit-align-items: center;
+	        align-items: center;
+	background-position: center 12px;
+	background-repeat: no-repeat;
+	-webkit-background-size: auto 20px;
+	     -o-background-size: auto 20px;
+	        background-size: auto 20px;
+	display: flex;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	height: 60px;
+	-webkit-justify-content: center;
+	        justify-content: center;
+}
+
+#nav ul li a {
+	height: 60px;
+	padding: 35px 0 0 0;
+	width: 60px;
+}
+
+#nav ul .map {
+	background-image: url("../images/pin.svg");
+}
+
+#nav ul .tsunami {
+	background-image: url("../images/tsunami.svg");
+}
+
+#nav ul .study {
+	background-image: url("../images/book.svg");
+}
+
+#nav ul .link {
+	background-image: url("../images/link.svg");
+}
+
+.alert {
+	background-color: #E56A6C;
+	color: #fff;
+	display: flex;
+	height: 50px;
+	left: 0;
+	margin: 20px 20px 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.alert .time {
+	-webkit-align-items: center;
+	        align-items: center;
+	display: flex;
+	-webkit-flex-basis: auto;
+	        flex-basis: auto;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	line-height: 18px;
+	padding: 0 0 0 50px;
+}
+
+.alert .time span:before {
+	background-image: url("../images/time.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 18px 18px;
+	     -o-background-size: 18px 18px;
+	        background-size: 18px 18px;
+	content: "";
+	display: inline-block;
+	height: 18px;
+	margin: 0 8px 0 0;
+	vertical-align: bottom;
+	width: 18px;
+}
+
+.alert .setting {
+	background-image: url("../images/gear.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 20px;
+	     -o-background-size: 20px;
+	        background-size: 20px;
+	display: flex;
+	-webkit-flex-basis: 50px;
+}
+
+.alert .setting a {
+	display: block;
+	height: 50px;
+	width: 50px;
+}
+
+.map-btn {
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 20px 20px;
+	     -o-background-size: 20px 20px;
+	        background-size: 20px 20px;
+	border: 2px solid #ddd;
+	-webkit-border-radius: 30px;
+	        border-radius: 30px;
+	height: 50px;
+	position: absolute;
+	right: 20px;
+	width: 50px;
+}
+
+.map-btn.layer {
+	background-color: #fff;
+	background-image: url("../images/layer.svg");
+	top: 90px;
+}
+
+.map-btn.location {
+	background-color: #fff;
+	background-image: url("../images/location.svg");
+	top: 150px;
+}
+
+.facility {
+	padding: 100px 0 50px 0;
+}
+
+.list {
+	padding: 0 20px;
+}
+
+.list li {
+	border-bottom: 1px dotted #E56A6C;
+}
+
+.list li:first-child {
+	border-top: 1px solid #E56A6C;
+}
+
+.list li:last-child {
+	border-bottom: 1px solid #E56A6C;
+}
+
+.list li dl {
+	-webkit-align-items: center;
+	        align-items: center;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	min-height: 30px;
+}
+
+.list li dl dt,
+.list li dl dd {
+	padding: 20px 0;
+}
+
+.list li dl dt {
+	-webkit-flex-basis: 150px;
+	        flex-basis: 150px;
+}
+
+.list li dl dd {
+	-webkit-flex-basis: auto;
+	        flex-basis: auto;
+	-webkit-flex-grow: 1;
+	        flex-grow: 1;
+}
+
+.list li dl .map {
+	background-image: url("../images/pin.svg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: 20px 20px;
+	     -o-background-size: 20px 20px;
+	        background-size: 20px 20px;
+	-webkit-flex-grow: 0;
+	        flex-grow: 0;
+	width: 40px;
+}
+
+.list.link li {
+	padding: 20px 0;
+	text-align: left;
+}
+
+.list.info dl dt {
+	flex-basis: 120px;
+}
+
+.list.info dl dt img {
+	width: 120px;
+}
+
+.list.info dl dd {
+	-webkit-flex-basis: auto;
+	        flex-basis: auto;
+	padding: 20px 0 20px 20px;
+	text-align: left;
+}
+
+.list.info dl dd span {
+	font-weight: bold;
+}
+
+
+@media screen and (max-width: 374px) {
+
+	.alert {
+		font-size: 13px;
+	}
+	
+	.alert .time {
+		padding: 0;
+		-webkit-justify-content: flex-end;
+		        justify-content: flex-end;
+	}
+
+/*	.alert .setting {
+		-webkit-flex-basis: 40px;
+		        flex-basis: 40px;
+	}
+
+	.alert .setting a {
+		width: 40px;
+	}*/
+
+}
